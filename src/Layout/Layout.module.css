@@ -1,0 +1,15 @@
+.content {
+}
+
+.sidebar {
+  position: fixed;
+  background: #3a2a39;
+}
+
+.layout {
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
