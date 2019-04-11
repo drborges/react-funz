@@ -1,0 +1,24 @@
+.toggle {
+  display: flex;
+  align-self: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 18px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.toggle:hover > * {
+  background: #ac9bab;
+  border: thin solid #ac9bab;
+}
+
+.toggle span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: #fff;
+  border: thin solid #fff;
+  border-radius: 2px;
+}

@@ -1,15 +1,39 @@
 .content {
+  margin: 0;
+  padding: 0;
+  transition: all 200ms ease-in;
+  transform:translate3d(45px, 0, 0);
+  width: calc(100% - 45px);
+  height: 100%;
 }
 
 .sidebar {
+  display: flex;
+  flex-direction: column;
   position: fixed;
+  height: 100%;
+  width: 250px;
+  color: #ac9bab;
   background: #3a2a39;
+  transition: all 200ms ease-in;
+  transform: translate3d(-205px, 0, 0);
 }
 
 .layout {
-}
-
-body {
+  display: flex;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+}
+
+.expanded-layout {
+  composes: layout;
+}
+
+.expanded-layout > nav {
+  transform: translate3d(0, 0, 0);
+}
+
+.expanded-layout > section {
+  transform: translate3d(250px, 0, 0);
 }
